@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name ="ISP Database Test Suite">
+    <test name ="Dashboard Login Suit">
+        <!--packages>
+            <package name="co.pragra.learning.selenium.framework.testcases.dashboardLogin"></package>
+        </packages-->
+    <classes>
+        <class name ="co.pragra.learning.selenium.framework.testcases.ISPMainPageTest"/>
+        <class name="co.pragra.learning.selenium.framework.testcases.UserLoginTest"/>
+        <class name="co.pragra.learning.selenium.framework.testcases.UserDashboardTest"/>
+    </classes>
+    </test>
+</suite>
