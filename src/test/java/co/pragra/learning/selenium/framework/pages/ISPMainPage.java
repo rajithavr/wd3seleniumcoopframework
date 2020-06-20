@@ -20,9 +20,9 @@ public class ISPMainPage {
             PageFactory.initElements(driver,this);
         }
     // On click -UserDashboard
-        public UserLoginPage clickOnUserDashboard(){
-             this.userDashboard.click();
-            return new UserLoginPage(driver) ;
+    public UserLoginPage clickOnUserDashboard(){
+       this.userDashboard.click();
+    return new UserLoginPage(driver) ;
         }
     // On click -Teacher Portal
     public UserLoginPage clickOnTeacherPortal(){
