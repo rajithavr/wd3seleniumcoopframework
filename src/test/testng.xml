@@ -9,6 +9,9 @@
         <class name ="co.pragra.learning.selenium.framework.testcases.ISPMainPageTest"/>
         <class name="co.pragra.learning.selenium.framework.testcases.UserLoginTest"/>
         <class name="co.pragra.learning.selenium.framework.testcases.UserDashboardTest"/>
+        <class name="co.pragra.learning.selenium.framework.testcases.SearchStudentTest"/>
+        <class name="co.pragra.learning.selenium.framework.testcases.AddNewStudentTest"/>
+        <class name="co.pragra.learning.selenium.framework.testcases.SaveStudentTest"/>
     </classes>
     </test>
 </suite>
