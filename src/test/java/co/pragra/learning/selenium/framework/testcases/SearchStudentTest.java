@@ -1,4 +1,4 @@
-package co.pragra.learning.selenium.framework.testcases.SearchAddSaveNav;
+package co.pragra.learning.selenium.framework.testcases;
 
 import co.pragra.learning.selenium.framework.drivermanager.DriverManager;
 import co.pragra.learning.selenium.framework.pages.SearchandSaveNav;

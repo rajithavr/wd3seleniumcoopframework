@@ -14,7 +14,7 @@ public class AddNewStudentTest {
     @Test(enabled=true)
     public void testAddnewstudent() throws InterruptedException {
         SearchandSaveNav page =new SearchandSaveNav(driver);
-        Thread.sleep(5000);
+        Thread.sleep(9000);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         page.clickaddnewstudents();
     }

@@ -28,9 +28,9 @@ public class ISPMainPageTest {
 
     @AfterSuite(enabled = true)
     public void tearDown() throws InterruptedException {
-        Thread.sleep(8000);
+        //Thread.sleep(8000);
         //WebDriverWait driverWait = new WebDriverWait(driver, 2000);
         //driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
-        //driver.quit();
+        driver.quit();
     }
 }
