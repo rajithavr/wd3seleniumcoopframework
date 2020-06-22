@@ -17,16 +17,16 @@ public class DriverManager {
 
     private WebDriver initDriver(String browser){
         if (browser.equalsIgnoreCase(BrowserType.CHROME)){
-            System.setProperty(Config.getProperty("chrome.property"),Config.getProperty("chrome.exe.path"));
+            System.setProperty(Config.getProperty("chrome.property"), Config.getProperty("chrome.exe.path"));
             return new ChromeDriver();
         }else if(browser.equalsIgnoreCase(BrowserType.FIREFOX)){
-            System.setProperty(Config.getProperty("firefox.property"),Config.getProperty("firefox.exe.path"));
+            System.setProperty(Config.getProperty("firefox.property"), Config.getProperty("firefox.exe.path"));
             return new FirefoxDriver();
         }else if(browser.equalsIgnoreCase(BrowserType.IE)) {
             System.setProperty(Config.getProperty("ie.property"), Config.getProperty("ie.exe.path"));
             return new InternetExplorerDriver();
         }else{
-            System.setProperty(Config.getProperty("chrome.property"),Config.getProperty("chrome.exe.path"));
+            System.setProperty(Config.getProperty("chrome.property"), Config.getProperty("chrome.exe.path"));
             return new ChromeDriver();
         }
     }
