@@ -1,4 +1,4 @@
-package co.pragra.learning.selenium.framework.testcases;
+package co.pragra.learning.selenium.framework.testcases.dashboardLogin;
 
 import co.pragra.learning.selenium.framework.config.Config;
 import co.pragra.learning.selenium.framework.drivermanager.DriverManager;
@@ -28,9 +28,9 @@ public class ISPMainPageTest {
 
     @AfterSuite(enabled = true)
     public void tearDown() throws InterruptedException {
-        Thread.sleep(8000);
+        //Thread.sleep(8000);
         //WebDriverWait driverWait = new WebDriverWait(driver, 2000);
         //driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
-        //driver.quit();
+        driver.quit();
     }
 }

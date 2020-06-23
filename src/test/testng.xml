@@ -6,9 +6,15 @@
             <package name="co.pragra.learning.selenium.framework.testcases.dashboardLogin"></package>
         </packages-->
     <classes>
-        <class name ="co.pragra.learning.selenium.framework.testcases.ISPMainPageTest"/>
-        <class name="co.pragra.learning.selenium.framework.testcases.UserLoginTest"/>
-        <class name="co.pragra.learning.selenium.framework.testcases.UserDashboardTest"/>
+        <!--Run -TestCases in -dashboardLogin Package-->
+        <class name ="co.pragra.learning.selenium.framework.testcases.dashboardLogin.ISPMainPageTest"/>
+        <class name="co.pragra.learning.selenium.framework.testcases.dashboardLogin.UserLoginTest"/>
+        <class name="co.pragra.learning.selenium.framework.testcases.dashboardLogin.UserDashboardTest"/>
+        <!--End of TestCases in -dashboardLogin Package-->
+
+        <class name="co.pragra.learning.selenium.framework.testcases.SearchAddSaveNav.AddNewStudentTest"/>
+        <class name="co.pragra.learning.selenium.framework.testcases.GeneralInformationTest"/>
+        <!--class name="co.pragra.learning.selenium.framework.testcases.SearchAddSaveNav.SaveStudentTest"/-->
     </classes>
     </test>
 </suite>

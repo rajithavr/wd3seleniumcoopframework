@@ -1,4 +1,4 @@
-package co.pragra.learning.selenium.framework.testcases;
+package co.pragra.learning.selenium.framework.testcases.dashboardLogin;
 import co.pragra.learning.selenium.framework.data.ExcelDataProvider;
 import co.pragra.learning.selenium.framework.drivermanager.DriverManager;
 import co.pragra.learning.selenium.framework.pages.UserLoginPage;

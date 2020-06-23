@@ -1,4 +1,5 @@
-git bpackage co.pragra.learning.selenium.framework.testcases;
+
+package co.pragra.learning.selenium.framework.testcases.dashboardLogin;
 
 import co.pragra.learning.selenium.framework.drivermanager.DriverManager;
 import co.pragra.learning.selenium.framework.pages.UserDashboardPage;
@@ -20,3 +21,4 @@ public class UserDashboardTest {
 
     }
 }
+git

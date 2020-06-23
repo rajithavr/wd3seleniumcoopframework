@@ -2,14 +2,11 @@ package co.pragra.learning.selenium.framework.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class UserDashboardPage {
     WebDriver driver;
-
-    //xpath for the below fields is //div[@class='panel-heading pane(//div[@class='panel-heading panel-blue'][1])[2]l-blue']/h3[@class="panel-title"]/i[1]
 
     @FindBy(xpath ="(//div[@class='panel-heading panel-blue'][1])[1]")
     private WebElement students;

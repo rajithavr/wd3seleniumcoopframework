@@ -18,8 +18,7 @@ import java.util.List;
 
 public class ExcelDataProvider {
 
-    //private String fileName = Config.getProperty("testdatasheet");
-    private String dataFileSheet ="masterdata.xlsx";
+    private String dataFileSheet ="ISP_DatabaseTestData.xlsx";
 
     private List<Object[]> data=new ArrayList<>();
     private Workbook workbook;
@@ -69,5 +68,10 @@ public class ExcelDataProvider {
     @DataProvider
     public Iterator<Object[]> loginProvider(){
         return getDataFromSheet("Login").iterator();
+    }
+
+    @DataProvider
+    public Iterator<Object[]> generalInfoProvider(){
+        return getDataFromSheet("GeneralInfo").iterator();
     }
 }
