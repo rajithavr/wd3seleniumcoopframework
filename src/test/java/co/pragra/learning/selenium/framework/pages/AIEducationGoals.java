@@ -211,6 +211,9 @@ public class AIEducationGoals {
     @FindBy(xpath = "//input[@placeholder='Website']")
     private WebElement website;
 
+    @FindBy(xpath = "((//div[@class='col-md-2 col-sm-2 m-l-50'])[1])//input")
+    private WebElement othBtn;
+
     @FindBy(xpath = "//div[@class='col-md-3 col-sm-3']//input[@placeholder='Other']")
     private WebElement otherField;
 
@@ -224,4 +227,360 @@ public class AIEducationGoals {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
+    public AIEducationGoals enterCGrade(String cGrade) {
+       this.currentlyInGrade.sendKeys(cGrade);
+        return this;
+    }
+
+    public AIEducationGoals enterAGrade(String aGrade) {
+        this.applyForGrade.sendKeys(aGrade);
+        return this;
+    }
+
+    public AIEducationGoals otherBtn(String obtn) {
+        this.otherRadioBtn.sendKeys(obtn);
+        return this;
+    }
+
+    public AIEducationGoals Other(String oth) {
+        this.other.sendKeys(oth);
+        return this;
+    }
+
+    public AIEducationGoals clickOnYesBtn(String yBtn) {
+        this.yesRadioBtn.sendKeys(yBtn);
+        return this;
+    }
+
+    public AIEducationGoals clickOnNoBtn(String nBtn) {
+        this.noRadioBtn.sendKeys(nBtn);
+        return this;
+    }
+
+    public AIEducationGoals Agency(String agen) {
+        this.agency.sendKeys(agen);
+        return this;
+    }
+
+    public AIEducationGoals AgencyFName(String fName) {
+        this.agencyName.sendKeys(fName);
+        return this;
+    }
+
+    public AIEducationGoals AgencyEmail(String aEmail) {
+        this.agencyEmail.sendKeys(aEmail);
+        return this;
+    }
+
+    public AIEducationGoals AgencyAddress(String aAddress) {
+        this.agencyAddress.sendKeys(aAddress);
+        return this;
+    }
+
+    public AIEducationGoals AgencyCity(String aCity) {
+        this.agencyCity.sendKeys(aCity);
+        return this;
+    }
+
+    public AIEducationGoals AgencyProvince(String aProvince) {
+        this.agencyProvince.sendKeys(aProvince);
+        return this;
+    }
+
+    public AIEducationGoals AgencyCountry(String aCountry) {
+        this.agencyCountry.sendKeys(aCountry);
+        return this;
+    }
+
+    public AIEducationGoals AgencyPostalCode(Object aPostalCode) {
+        this.agencyPostalCode.sendKeys(String.valueOf(aPostalCode));
+        return this;
+    }
+
+    public AIEducationGoals Counsellor(String cName) {
+        this.counsellor.sendKeys(cName);
+        return this;
+    }
+
+    public AIEducationGoals CounsellorEmail(Object cEmail) {
+        this.counsellorEmail.sendKeys(String.valueOf(cEmail));
+        return this;
+    }
+
+    public AIEducationGoals CounsellorPhone(int cPhone) {
+        this.counsellorPhone.sendKeys(String.valueOf(cPhone));
+        return this;
+    }
+
+    public AIEducationGoals CurrentSchool(String cSchool) {
+        this.currentSchool.sendKeys(cSchool);
+        return this;
+    }
+
+    public AIEducationGoals SchoolWebsite(String sWebsite) {
+        this.schoolWebsite.sendKeys(sWebsite);
+        return this;
+    }
+
+    public AIEducationGoals SeptemberRadioBtn(String sRadioBtn) {
+        this.septemberRadioBtn.sendKeys(sRadioBtn);
+        return this;
+    }
+
+    public AIEducationGoals FebRadioBtn(String fRadioBtn) {
+        this.februaryRadioBtn.sendKeys(fRadioBtn);
+        return this;
+    }
+
+    public AIEducationGoals JulyRadioBtn(String jRadioBtn) {
+        this.julyRadioBtn.sendKeys(jRadioBtn);
+        return this;
+    }
+
+    public AIEducationGoals SelectYear(int yr) {
+        this.year.sendKeys(String.valueOf(yr));
+        return this;
+    }
+
+    public AIEducationGoals OthBtn(String obtn) {
+        this.otherBtn.sendKeys(obtn);
+        return this;
+    }
+
+    public AIEducationGoals FromDate(String From) {
+        this.from.sendKeys(From);
+        return this;
+    }
+
+    public AIEducationGoals ToDate(String To) {
+        this.to.sendKeys(To);
+        return this;
+    }
+
+    public AIEducationGoals Othermonth(String oMonth) {
+        this.otherMonth.sendKeys(oMonth);
+        return this;
+    }
+
+    public AIEducationGoals SchoolAttended(String sAttended) {
+        this.schoolAttended.sendKeys(sAttended);
+        return this;
+    }
+
+    public AIEducationGoals CanadianSchool(String canSchool) {
+        this.canadianSchool.sendKeys(canSchool);
+        return this;
+    }
+
+    public AIEducationGoals SchoolGoal(String SGoal) {
+        this.schoolGoal.sendKeys(SGoal);
+        return this;
+    }
+
+    public AIEducationGoals OtherSchoolGoal(String OSGoal) {
+        this.otherSchoolGoal.sendKeys(OSGoal);
+        return this;
+    }
+
+    public AIEducationGoals EngYears(int EYrs) {
+        this.studiedEnglishYears.sendKeys(String.valueOf(EYrs));
+        return this;
+    }
+
+    public AIEducationGoals ieltsYesBtn(String ieltsyes) {
+        this.ieltsYes.sendKeys(ieltsyes);
+        return this;
+    }
+
+    public AIEducationGoals ieltsNoBtn(String ieltsno) {
+        this.ieltsNo.sendKeys(ieltsno);
+        return this;
+    }
+
+    public AIEducationGoals ieltsRslt(double ieltsscore) {
+        this.ieltsScore.sendKeys(String.valueOf(ieltsscore));
+        return this;
+    }
+
+    public AIEducationGoals toeflYesBtn(String toeflyes) {
+        this.toeflYes.sendKeys(toeflyes);
+        return this;
+    }
+
+    public AIEducationGoals toeflNoBtn(String toeflno) {
+        this.toeflNo.sendKeys(toeflno);
+        return this;
+    }
+
+    public AIEducationGoals toeflRslt(double toeflscore) {
+        this.toeflScore.sendKeys(String.valueOf(toeflscore));
+        return this;
+    }
+
+    public AIEducationGoals ooptYesBtn(String ooptyes) {
+        this.ooptYes.sendKeys(ooptyes);
+        return this;
+    }
+
+    public AIEducationGoals ooptNoBtn(String ooptno) {
+        this.ooptNo.sendKeys(ooptno);
+        return this;
+    }
+
+    public AIEducationGoals ooptRslt(double ooptscore) {
+        this.ooptScore.sendKeys(String.valueOf(ooptscore));
+        return this;
+    }
+
+    public AIEducationGoals slepYesBtn(String slepyes) {
+        this.slepYes.sendKeys(slepyes);
+        return this;
+    }
+
+    public AIEducationGoals slepNoBtn(String slepno) {
+        this.slepNo.sendKeys(slepno);
+        return this;
+    }
+
+    public AIEducationGoals slepRslt(double slepscore) {
+        this.slepScore.sendKeys(String.valueOf(slepscore));
+        return this;
+    }
+
+    public AIEducationGoals cambridgeYesBtn(String camyes) {
+        this.cambridgeYes.sendKeys(camyes);
+        return this;
+    }
+
+    public AIEducationGoals cambridgeNoBtn(String camno) {
+        this.cambridgeNo.sendKeys(camno);
+        return this;
+    }
+
+    public AIEducationGoals cambridgeRslt(double camscore) {
+        this.cambridgeScore.sendKeys(String.valueOf(camscore));
+        return this;
+    }
+
+    public AIEducationGoals placementYesBtn(String playes) {
+        this.placementYes.sendKeys(playes);
+        return this;
+    }
+
+    public AIEducationGoals placementNoBtn(String plano) {
+        this.placementNo.sendKeys(plano);
+        return this;
+    }
+
+    public AIEducationGoals placementRslt(double plascore) {
+        this.placementScore.sendKeys(String.valueOf(plascore));
+        return this;
+    }
+
+    public AIEducationGoals otherYesBtn(String otheryes) {
+        this.otherYes.sendKeys(otheryes);
+        return this;
+    }
+
+    public AIEducationGoals otherNoBtn(String otherno) {
+        this.otherNo.sendKeys(otherno);
+        return this;
+    }
+
+    public AIEducationGoals otherRslt(double otherscore) {
+        this.otherScore.sendKeys(String.valueOf(otherscore));
+        return this;
+    }
+
+    public AIEducationGoals learningCourseYesBtn(String courseyes) {
+        this.learningCourseYes.sendKeys(courseyes);
+        return this;
+    }
+
+    public AIEducationGoals learningCourseNoBtn(String courseno) {
+        this.learningCourseNo.sendKeys(courseno);
+        return this;
+    }
+
+    public AIEducationGoals HearAboutSchool(String aboutSchool) {
+        this.hearAboutSchool.sendKeys(aboutSchool);
+        return this;
+    }
+
+    public AIEducationGoals CompleteHighSchool(String cHighSchool) {
+        this.completeHighSchool.sendKeys(cHighSchool);
+        return this;
+    }
+
+    public AIEducationGoals NotCompleteHighSchool(String ncHighSchool) {
+        this.notCompleteHighSchool.sendKeys(ncHighSchool);
+        return this;
+    }
+
+    public AIEducationGoals VocationalTraining(String vtraining) {
+        this.vocationalTraining.sendKeys(vtraining);
+        return this;
+    }
+
+    public AIEducationGoals PostSecondary(String psecondary) {
+        this.postSecondary.sendKeys(psecondary);
+        return this;
+    }
+
+    public AIEducationGoals SpecialLearningNeeds(String learningneeds) {
+        this.specialLearningNeeds.sendKeys(learningneeds);
+        return this;
+    }
+
+    public AIEducationGoals FrndOrFamily(int frndorfamily) {
+        this.friendOrFamily.sendKeys(String.valueOf(frndorfamily));
+        return this;
+    }
+
+    public AIEducationGoals EducationFair(int edfair) {
+        this.educationFair.sendKeys(String.valueOf(edfair));
+        return this;
+    }
+
+    public AIEducationGoals CanadianEduCenter(int caneducentre) {
+        this.canadianEduCenter.sendKeys(String.valueOf(caneducentre));
+        return this;
+    }
+
+    public AIEducationGoals CanadianConsulate(int canconsulate) {
+        this.canadianConsulate.sendKeys(String.valueOf(canconsulate));
+        return this;
+    }
+
+    public AIEducationGoals WebsiteBtn(int webbtn) {
+        this.websiteBtn.sendKeys(String.valueOf(webbtn));
+        return this;
+    }
+
+    public AIEducationGoals Website(String web) {
+        this.website.sendKeys(web);
+        return this;
+    }
+
+    public AIEducationGoals OthBtn(int othbtn) {
+        this.othBtn.sendKeys(String.valueOf(othbtn));
+        return this;
+    }
+
+    public AIEducationGoals OtherField(String othfield) {
+        this.otherField.sendKeys(othfield);
+        return this;
+    }
+
+    public AIEducationGoals Newspaper(String paper) {
+        this.newspaper.sendKeys(paper);
+        return this;
+    }
+
+    public AIEducationGoals Magazine(String mag) {
+        this.magazine.sendKeys(mag);
+        return this;
+    }
+
 }
