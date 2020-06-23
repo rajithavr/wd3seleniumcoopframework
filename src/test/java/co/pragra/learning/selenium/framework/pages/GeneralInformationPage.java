@@ -11,130 +11,179 @@ public class GeneralInformationPage {
     WebDriver driver;
     JavascriptExecutor jse = (JavascriptExecutor) driver;
 
-    @FindBy(xpath="//input[@id='StdStatusField-selectized']")
+    @FindBy(xpath = "//input[@id='StdStatusField-selectized']")
     private WebElement status;
 
-    @FindBy(xpath ="(//div[@class='selectize-control ng-isolate-scope ng-pristine ng-valid single'])[2]//input")
+    @FindBy(xpath = "(//div[@class='selectize-control ng-isolate-scope ng-pristine ng-valid single'])[2]//input")
     private WebElement reason;
 
-    @FindBy(xpath="//input[@id='WeeksField']")
+    @FindBy(xpath = "//input[@id='WeeksField']")
     private WebElement weeks;
 
-    @FindBy(xpath="//div[@class='col-md-2 col-sm-2']/input")
+    @FindBy(xpath = "//div[@class='col-md-2 col-sm-2']/input")
     private WebElement esis_ID;
 
-    @FindBy(xpath="//input[@id='checkIfStudentIsActiveField']")
+    @FindBy(xpath = "//input[@id='checkIfStudentIsActiveField']")
     private WebElement active;
 
-    @FindBy(xpath="//input[@id='fName']")
+    @FindBy(xpath = "//input[@id='fName']")
     private WebElement fName;
 
-    @FindBy(xpath="//input[@id='lName']")
+    @FindBy(xpath = "//input[@id='lName']")
     private WebElement lName;
 
-    @FindBy(xpath="//input[@id='Nickname']")
+    @FindBy(xpath = "//input[@id='Nickname']")
     private WebElement nickName;
 
-    @FindBy(xpath="//input[@id='MiddleName']")
+    @FindBy(xpath = "//input[@id='MiddleName']")
     private WebElement middleName;
 
-    @FindBy(xpath="//input[@id='studentCell']")
+    @FindBy(xpath = "//input[@id='studentCell']")
     private WebElement studentCell;
 
-    @FindBy(xpath="//input[@id='stdPhone']")
+    @FindBy(xpath = "//input[@id='stdPhone']")
     private WebElement studentPhone;
 
-    @FindBy(xpath="((//div[@class='col-md-6 col-sm-6'])[6]//input)")
+    @FindBy(xpath = "((//div[@class='col-md-6 col-sm-6'])[6]//input)")
     private WebElement dateofbirth;
 
-    @FindBy(xpath="//input[@id='Gender-selectized']")//input[@id='Gender-selectized']
+    @FindBy(xpath = "//input[@id='Gender-selectized']")//input[@id='Gender-selectized']
     private WebElement gender;
 
-    @FindBy(xpath="((//div[@class='col-md-6 col-sm-6'])[7])//input")
+    @FindBy(xpath = "((//div[@class='col-md-6 col-sm-6'])[7])//input")
     private WebElement birthCountry;
 
-    @FindBy(xpath="((//div[@class='col-md-6 col-sm-6'])[8])//input")
+    @FindBy(xpath = "((//div[@class='col-md-6 col-sm-6'])[8])//input")
     private WebElement birthCity;
 
-    @FindBy(xpath="((//div[@class='col-md-6 col-sm-6'])[9])//input")
+    @FindBy(xpath = "((//div[@class='col-md-6 col-sm-6'])[9])//input")
     private WebElement citizenship;
 
-    @FindBy(xpath="((//div[@class='col-md-6 col-sm-6'])[10])//input")
+    @FindBy(xpath = "((//div[@class='col-md-6 col-sm-6'])[10])//input")
     private WebElement language;
 
+    //***********************Home-Stay Section by Harleen and Uday**************************************//
+    @FindBy(xpath = "(//div[@class='selectize-control ng-pristine ng-untouched ng-valid ng-isolate-scope single'])[22]")
+    private WebElement homestayRequired;
 
-    public GeneralInformationPage (WebDriver driver){
-        this.driver =driver;
-        PageFactory.initElements(driver,this);
-    }
-    public GeneralInformationPage enterStatus(String Status){
+    @FindBy(xpath = "(//div[@class='selectize-control ng-pristine ng-untouched ng-valid ng-isolate-scope single'])[24]")
+    private WebElement anotherHomestay;
 
-        this.status.sendKeys(Status+ Keys.ENTER);
+    @FindBy(xpath = "(//div[@class='selectize-control ng-pristine ng-untouched ng-valid ng-isolate-scope single'])[23]")
+    private WebElement homestayCoordinator;
+
+
+    public GeneralInformationPage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
+    public GeneralInformationPage enterStatus(String Status) {
+
+        this.status.sendKeys(Status + Keys.ENTER);
         return this;
     }
-    public GeneralInformationPage enterReason(String reason){
-        this.reason.sendKeys(reason.trim()+ Keys.ENTER);
+
+    public GeneralInformationPage enterReason(String reason) {
+        this.reason.sendKeys(reason.trim() + Keys.ENTER);
         return this;
     }
-    public GeneralInformationPage enterESIS_ID(Object esis_id){
-        this.esis_ID.sendKeys (String.valueOf(esis_id));
+
+    public GeneralInformationPage enterESIS_ID(Object esis_id) {
+        this.esis_ID.sendKeys(String.valueOf(esis_id));
         return this;
     }
-    public GeneralInformationPage isActive(Object activ){
-        this.active.sendKeys (String.valueOf(activ));
+
+    public GeneralInformationPage isActive(Object activ) {
+        this.active.sendKeys(String.valueOf(activ));
         return this;
     }
-    public GeneralInformationPage enterweeks(Object weeksfield){
-        this.weeks.sendKeys (String.valueOf(weeksfield));
+
+    public GeneralInformationPage enterweeks(Object weeksfield) {
+        this.weeks.sendKeys(String.valueOf(weeksfield));
         return this;
     }
-    public GeneralInformationPage enterFname(String fname){
+
+    public GeneralInformationPage enterFname(String fname) {
         this.fName.sendKeys(fname.trim());
         return this;
     }
-    public GeneralInformationPage enterLname(String lname){
+
+    public GeneralInformationPage enterLname(String lname) {
         this.lName.sendKeys(lname.trim());
         return this;
     }
-    public GeneralInformationPage enterNickname(String nname){
+
+    public GeneralInformationPage enterNickname(String nname) {
         this.nickName.sendKeys(nname.trim());
         return this;
     }
-    public GeneralInformationPage enterMiddlename(String mname){
+
+    public GeneralInformationPage enterMiddlename(String mname) {
         this.middleName.sendKeys(mname.trim());
         return this;
     }
-    public GeneralInformationPage enterstudentCell(Object studentcell){
+
+    public GeneralInformationPage enterstudentCell(Object studentcell) {
         this.studentCell.sendKeys(String.valueOf(studentcell));
         return this;
     }
-    public GeneralInformationPage enterstudentPhone(Object studentphone){
+
+    public GeneralInformationPage enterstudentPhone(Object studentphone) {
         this.studentPhone.sendKeys(String.valueOf(studentphone));
         return this;
     }
-    public GeneralInformationPage enterDOB(String dob){
+
+    public GeneralInformationPage enterDOB(String dob) {
         this.dateofbirth.sendKeys(dob.trim());
         return this;
     }
-    public GeneralInformationPage enterGender(String gend){
-        this.gender.sendKeys(gend.trim()+ Keys.ENTER);
+
+    public GeneralInformationPage enterGender(String gend) {
+        this.gender.sendKeys(gend.trim() + Keys.ENTER);
         return this;
     }
-    public GeneralInformationPage enterbirthcountry(String birthcountry){
-        this.birthCountry.sendKeys(birthcountry.trim()+ Keys.ENTER);
+
+    public GeneralInformationPage enterbirthcountry(String birthcountry) {
+        this.birthCountry.sendKeys(birthcountry.trim() + Keys.ENTER);
         return this;
     }
-    public GeneralInformationPage enterbirthcity(String birthcity){
+
+    public GeneralInformationPage enterbirthcity(String birthcity) {
         this.birthCity.sendKeys(birthcity.trim());
         return this;
     }
-    public GeneralInformationPage enterCitizenship(String citizen){
-        this.citizenship.sendKeys(citizen.trim()+ Keys.ENTER);
+
+    public GeneralInformationPage enterCitizenship(String citizen) {
+        this.citizenship.sendKeys(citizen.trim() + Keys.ENTER);
         return this;
     }
-    public GeneralInformationPage enterlanguage(String lang){
-        this.language.sendKeys(lang.trim()+ Keys.ENTER);
+
+    public GeneralInformationPage enterlanguage(String lang) {
+        this.language.sendKeys(lang.trim() + Keys.ENTER);
         return this;
+    }
+
+
+    //***********************/
+
+    public void scrollpage()
+    {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,1500)", "");
+
+}
+    public void enterHomestayRequired(String homestayReqd)
+    {
+        this.homestayRequired.sendKeys(homestayReqd.trim());
+    }
+    public void enteranotherHomestayRequired(String anotherhomestayReqd)
+    {
+        this.anotherHomestay.sendKeys(anotherhomestayReqd.trim());
+    }
+    public void enterHomestayCoordinator(String homestayCoordinator)
+    {
+        this.homestayCoordinator.sendKeys(homestayCoordinator.trim());
     }
 }
 

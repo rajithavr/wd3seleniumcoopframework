@@ -35,6 +35,12 @@ public class GeneralInformationTest {
         page.enterbirthcity((String)data[14]);
         page.enterCitizenship((String)data[15]);
         page.enterlanguage((String)data[16]);
+        //**********/
+        page.scrollpage();
+        Thread.sleep(6000);
+        page.enterHomestayRequired((String)data[17]);
+        page.enteranotherHomestayRequired((String)data[18]);
+        page.enterHomestayCoordinator((String)data[19]);
         //Thread.sleep(8000);
     }
 
