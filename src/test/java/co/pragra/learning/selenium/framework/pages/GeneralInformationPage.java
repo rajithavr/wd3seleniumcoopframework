@@ -63,13 +63,12 @@ public class GeneralInformationPage {
     private WebElement language;
 
     //***********************Home-Stay Section by Harleen and Uday**************************************//
-    @FindBy(xpath = "(//div[@class='selectize-control ng-pristine ng-untouched ng-valid ng-isolate-scope single'])[22]")
+
+    @FindBy(xpath ="((//div[@class=\"col-md-6 col-sm-6\"])[52])//input" )
     private WebElement homestayRequired;
-
-    @FindBy(xpath = "(//div[@class='selectize-control ng-pristine ng-untouched ng-valid ng-isolate-scope single'])[24]")
+    @FindBy(xpath = "((//div[@class=\"col-md-6 col-sm-6\"])[54])//input")
     private WebElement anotherHomestay;
-
-    @FindBy(xpath = "(//div[@class='selectize-control ng-pristine ng-untouched ng-valid ng-isolate-scope single'])[23]")
+    @FindBy(xpath="((//div[@class=\"col-md-6 col-sm-6\"])[53])//input")
     private WebElement homestayCoordinator;
 
 
