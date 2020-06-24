@@ -10,10 +10,10 @@ public class AIMedicalInfoPage {
     @FindBy(xpath = "//input[@type='name' and @placeholder='Parent/Agent Email']")
     WebElement ParentAgent;
 
-
     public AIMedicalInfoPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
 }
 
