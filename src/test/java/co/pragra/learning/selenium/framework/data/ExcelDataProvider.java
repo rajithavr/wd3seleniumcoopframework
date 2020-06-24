@@ -74,4 +74,10 @@ public class ExcelDataProvider {
     public Iterator<Object[]> generalInfoProvider(){
         return getDataFromSheet("GeneralInfo").iterator();
     }
+
+    @DataProvider
+    public Iterator<Object[]> addInfoEduGoalsProvider(){
+        return getDataFromSheet("AIEducationGoals").iterator();
+    }
+
 }
