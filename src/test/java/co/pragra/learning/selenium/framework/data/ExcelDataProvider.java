@@ -67,11 +67,30 @@ public class ExcelDataProvider {
 
     @DataProvider
     public Iterator<Object[]> loginProvider(){
-        return getDataFromSheet("Login").iterator();
+        return getDataFromSheet("Login_Credentials").iterator();
     }
 
     @DataProvider
     public Iterator<Object[]> generalInfoProvider(){
-        return getDataFromSheet("GeneralInfo").iterator();
+        return getDataFromSheet("GeneralInfo_Data").iterator();
     }
+    @DataProvider
+    public Iterator<Object[]> studentProvider(){
+        return getDataFromSheet("SearchStudent").iterator();
+    }
+    @DataProvider
+    public Iterator<Object[]> additionalInfoIstProvider()
+    {
+        return getDataFromSheet("AdditionalInfoIst").iterator();
+    }
+    @DataProvider
+    public Iterator<Object[]> additionalInfoMedicalProvider()
+    {
+        return getDataFromSheet("MedicalInfoPage").iterator();
+    }
+@DataProvider
+    public Iterator<Object[]>AIExcelProvider(){
+        return  getDataFromSheet("AIExcel").iterator();
+}
+
 }

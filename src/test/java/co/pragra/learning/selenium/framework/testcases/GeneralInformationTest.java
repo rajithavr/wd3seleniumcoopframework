@@ -7,16 +7,15 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class GeneralInformationTest {
-
     WebDriver driver = DriverManager.getDriver();
 
-    @Test(enabled = true, dataProviderClass = ExcelDataProvider.class,dataProvider ="generalInfoProvider")
+    @Test(enabled = true, dataProviderClass = ExcelDataProvider.class ,dataProvider ="generalInfoProvider")
 
-    public void testGeneralInfo(Object [] data) throws InterruptedException {
+    public  void testGeneralInfo(Object [] data) throws InterruptedException {
 
         GeneralInformationPage page;
         page = new GeneralInformationPage(driver);
-        //Thread.sleep(9000);
+//        Thread.sleep(9000);
 
         page.enterStatus((String)data[0]);
         page.enterReason((String)data[1]);
@@ -35,7 +34,8 @@ public class GeneralInformationTest {
         page.enterbirthcity((String)data[14]);
         page.enterCitizenship((String)data[15]);
         page.enterlanguage((String)data[16]);
-        //Thread.sleep(8000);
+//        Thread.sleep(8000);
+
     }
 
 }

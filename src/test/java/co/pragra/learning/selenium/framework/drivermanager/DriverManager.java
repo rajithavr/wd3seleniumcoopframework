@@ -7,8 +7,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 //Singleton Class
 public class DriverManager {
-    private static DriverManager driverManager;
-    private WebDriver webDriver;
+    public static DriverManager driverManager;
+    public WebDriver webDriver;
 
     private DriverManager(){
         String browser = Config.getProperty("browser");
