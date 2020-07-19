@@ -6,6 +6,8 @@ import co.pragra.learning.selenium.framework.pages.GeneralInformationPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class GeneralInformationTest {
 
     WebDriver driver = DriverManager.getDriver();
@@ -34,7 +36,6 @@ public class GeneralInformationTest {
         page.enterbirthcity((String)data[14]);
         page.enterCitizenship((String)data[15]);
         page.enterlanguage((String)data[16]);
-        //Thread.sleep(8000);
         page.enterspecialProjectgrp((String)data[17]);
         page.enterstudentgrpContact(data[18]);
         page.enterstudentAttribute((String)data[19]);
@@ -45,9 +46,14 @@ public class GeneralInformationTest {
         page.enterstudentthirdEmail((String)data[24]);
         page.entermaritalStatus((String)data[25]);
         page.enterPEN(data[26]);
+
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         page.isGroup(data[27]);//need to check xpath
         page.entermemberofGroup((String)data[28]);
         page.enterappRecDate((String)data[29]);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         //page.enterstudentChoice((String)data[30]);
         page.enterprogName((String)data[32]);
         page.enterresident((String)data[33]);
@@ -64,10 +70,13 @@ public class GeneralInformationTest {
 
         page.enterfirstenrolled((String)data[48]);
         page.enterpaidTo((String)data[49]);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         page.enterschoolStartDate((String)data[50]);
         page.enterschoolEndDate((String)data[51]);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         page.entertutionStartDate((String)data[52]);
         page.entertutionEndDate((String)data[53]);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         page.enterdistrictLastDate((String)data[54]);
         page.entersecAddress((String)data[55]);
         page.enterstudentCity((String)data[56]);
@@ -76,6 +85,11 @@ public class GeneralInformationTest {
         page.enterstudentPostal((String)data[59]);
         page.enteruniversity((String)data[60]);
         page.iswithParents((String)data[61]);
+
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        page.enterHomestayRequired((String)data[62]);
+        page.enteranotherHomestayRequired((String)data[63]);
+        page.enterHomestayCoordinator((String)data[64]);
 
     }
 

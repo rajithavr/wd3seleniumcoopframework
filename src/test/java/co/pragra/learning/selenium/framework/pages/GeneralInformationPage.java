@@ -171,6 +171,14 @@ public class GeneralInformationPage {
     @FindBy(xpath="((//div[@class='col-md-6 col-sm-6'])[43])//input")
     private WebElement withParents;
 
+    //Home stay section-from Uday
+    @FindBy(xpath ="((//div[@class='col-md-6 col-sm-6'])[52])//input" )
+    private WebElement homestayRequired;
+    @FindBy(xpath = "((//div[@class='col-md-6 col-sm-6'])[54])//input")
+    private WebElement anotherHomestay;
+    @FindBy(xpath="((//div[@class='col-md-6 col-sm-6'])[53])//input")
+    private WebElement homestayCoordinator;
+    //End
 
     public GeneralInformationPage (WebDriver driver){
         this.driver =driver;
@@ -409,6 +417,22 @@ public class GeneralInformationPage {
         this.withParents.sendKeys (String.valueOf(iswithpar));
         return this;
     }
+    //Home stay section-from Uday
+
+    public void enterHomestayRequired(String homestayReqd)
+    {
+        this.homestayRequired.sendKeys(homestayReqd.trim());
+    }
+    public void enteranotherHomestayRequired(String anotherhomestayReqd)
+    {
+        this.anotherHomestay.sendKeys(anotherhomestayReqd.trim());
+    }
+    public void enterHomestayCoordinator(String homestayCoordinator)
+    {
+        this.homestayCoordinator.sendKeys(homestayCoordinator.trim());
+    }
+
+
 
 }
 
