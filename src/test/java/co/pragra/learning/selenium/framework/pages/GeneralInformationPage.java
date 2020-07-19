@@ -169,7 +169,7 @@ public class GeneralInformationPage {
     public void scrollpage()
     {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,1500)", "");
+        js.executeScript("window.scrollBy(0,700)", "");
 
 }
     public void enterHomestayRequired(String homestayReqd)

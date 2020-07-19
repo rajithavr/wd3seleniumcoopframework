@@ -74,4 +74,8 @@ public class ExcelDataProvider {
     public Iterator<Object[]> generalInfoProvider(){
         return getDataFromSheet("GeneralInfo").iterator();
     }
+    @DataProvider
+    public Iterator<Object[]> PlacementTestingProvider(){
+        return getDataFromSheet("PlacementTesting").iterator();
+    }
 }
